@@ -45,6 +45,8 @@ export default function Home() {
             <input
               className="w-full text-black focus:outline-none px-10 py-2 "
               type="text"
+              value={post}
+              onChange={(e) => setPost(e.target.value)}
               placeholder="type here something..."
             />
             <button className="px-10 text-2xl" onClick={submitPost}>
