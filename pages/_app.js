@@ -1,18 +1,17 @@
 import Header from "@/components/Header";
 import "@/styles/globals.css";
 //import space mono from next font
-import { Space_Mono } from "@next/font/google";
+import { Bebas_Neue } from "@next/font/google";
 
-const SpaceMono = Space_Mono({
+const BebasNeue = Bebas_Neue({
   subsets: ["latin"],
-  // weights: [400, 700],
   display: "swap",
-  weight: ["400","700"],
+  weight: ["400"],
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={SpaceMono.className}>
+    <main className={`${BebasNeue.className} bg-black min-h-screen`}>
       <Header/>
       <Component {...pageProps} />
     </main>

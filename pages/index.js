@@ -47,7 +47,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className='text-white'>
       <Head>
         <title>FCL Quickstart with NextJS</title>
         <meta name="description" content="My first web3 app on Flow!" />
