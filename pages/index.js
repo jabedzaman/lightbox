@@ -7,7 +7,6 @@ import Post from "@/components/Post";
 export default function Home() {
   const [user, setUser] = useState({ loggedIn: null });
 
-
   useEffect(() => fcl.currentUser.subscribe(setUser), []);
 
   const AuthedState = () => {
@@ -62,7 +61,6 @@ export default function Home() {
           <Post
             post="piente id voluptates, laboriosam magni dolore eligendi impedit repellendus sed quo quod, dignissimos quisquam ad quasi numquam optio, earum natus totam quidem!"
             user="hosenur"
-            imgsrc="https://jabed.me/spotiloader.png"
           />
         </div>
       </div>
@@ -73,8 +71,8 @@ export default function Home() {
     return (
       <div className="max-w-7xl bg-white mx-auto p-10 text-9xl rounded-3xl min-h-screen flex items-center">
         <span>
-
-        OOOOOOOPS ;( IT SEEMS LIKE YOU ARE NOT LOGGED IN, PLEASE <span className="text-emerald-400">LOGIN</span>  TO CONTINUE 😀
+          OOOOOOOPS ;( IT SEEMS LIKE YOU ARE NOT LOGGED IN, PLEASE{" "}
+          <span className="text-emerald-400">LOGIN</span> TO CONTINUE 😀
         </span>
       </div>
     );
