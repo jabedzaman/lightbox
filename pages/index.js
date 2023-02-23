@@ -32,7 +32,6 @@ export default function Home() {
         <div>Address: {user?.addr ?? "No Address"}</div>
         <div>Profile Name: {name ?? "--"}</div> {/* NEW */}
         <button onClick={sendQuery}>Send Query</button> {/* NEW */}
-        <button onClick={fcl.unauthenticate}>Log Out</button>
       </div>
     )
   }
@@ -40,8 +39,6 @@ export default function Home() {
   const UnauthenticatedState = () => {
     return (
       <div>
-        <button onClick={fcl.logIn}>Log In</button>
-        <button onClick={fcl.signUp}>Sign Up</button>
       </div>
     )
   }
