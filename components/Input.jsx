@@ -50,7 +50,9 @@ function Input() {
   //   console.log(messages);
   return (
     <div>
-      <div className="max-w-5xl mx-auto px-10 py-4 my-10 flex w-full border border-white">
+      <div className="max-w-5xl mx-auto px-10 py-4 my-10 flex w-full border border-white
+      disabled:color-gray-500 disabled:cursor-not-allowed
+      ">
         <input
           type="text"
           value={message}
@@ -59,6 +61,7 @@ function Input() {
         />
         <button
           className="text-white bg-blue-500 px-4 py-2 mx-10"
+          disabled={!message}
           onClick={() => {
             addMessage();
           }}

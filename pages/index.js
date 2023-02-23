@@ -30,7 +30,13 @@ export default function Home() {
   const AuthedState = () => {
     return (
       <div>
-        <div className="p-10 flex flex-col space-y-4">
+        <div className="p-10 flex flex-col space-y-4 max-w-5xl mx-auto">
+          <div className="text-white">
+            <span className="text-5xl font-bold">Welcome to the chat</span>
+            <p>
+              powered by <span className="text-emerald-400">Flow</span>
+            </p>
+          </div>
           <Input />
           {messages.map((message) => (
             <Post
