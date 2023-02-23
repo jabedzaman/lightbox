@@ -8,8 +8,7 @@ export default function Header() {
   const AuthedState = () => {
     return (
       <div className="flex flex-row space-x-3  items-start">
-        <div className="text-2xl">Address: {user?.addr ?? "No Address"}</div>
-        <button className="text-2xl" onClick={fcl.unauthenticate}>Log Out</button>
+        <div >Address: {user?.addr ?? "No Address"}</div>
       </div>
     );
   };
@@ -34,8 +33,8 @@ export default function Header() {
   };
 
   return (
-    <div className="p-5 text-white bg-black border-b">
-      <div className="max-w-7xl mx-auto p-5 text-3xl font-bold flex justify-between items-center">
+    <div className="p-5 text-white fixed w-full z-50 header">
+      <div className="max-w-7xl mx-auto text-3xl font-bold flex justify-between items-center">
         <Link
           href="/"
           className="hover:underline underline-offset-4 duration-200 ease-in-out"

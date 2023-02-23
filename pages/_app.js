@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${BebasNeue.className} bg-black min-h-screen`}>
       <Header/>
-      <Component {...pageProps} />
+      <Component  {...pageProps} />
       <Footer/>
     </main>
   );
