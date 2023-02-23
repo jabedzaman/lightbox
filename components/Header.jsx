@@ -8,7 +8,8 @@ export default function Header() {
   const AuthedState = () => {
     return (
       <div className="flex flex-row space-x-3  items-start">
-        <div >Address: {user?.addr ?? "No Address"}</div>
+        <div>Address: {user?.addr ?? "No Address"}</div>
+        <button onClick={fcl.unauthenticate}>Log Out</button>
       </div>
     );
   };
