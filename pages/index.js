@@ -3,6 +3,8 @@ import "../flow/config";
 import { useState, useEffect } from "react";
 import * as fcl from "@onflow/fcl";
 import Post from "@/components/Post";
+import LottiePlayer from "lottie-react";
+import bouncing from "../public/bouncing.json";
 
 export default function Home() {
   const [user, setUser] = useState({ loggedIn: null });
@@ -59,7 +61,12 @@ export default function Home() {
   };
 
   const UnauthenticatedState = () => {
-    return <div></div>;
+    return (
+      <div className="h-screen  flex flex- justify-center items-center -my-70">
+        <h1 className="text-4xl">You must be logged in to view this page.</h1>
+        <LottiePlayer animationData={bouncing} loop={true} />
+      </div>
+    );
   };
 
   return (

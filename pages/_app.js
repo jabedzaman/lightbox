@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "@/styles/globals.css";
+import Footer from "@/components/Footer";
 //import space mono from next font
 import { Bebas_Neue } from "@next/font/google";
 
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${BebasNeue.className} bg-black min-h-screen`}>
       <Header/>
       <Component {...pageProps} />
+      <Footer/>
     </main>
   );
 }
