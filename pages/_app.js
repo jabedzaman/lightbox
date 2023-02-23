@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "@/styles/globals.css";
 import Footer from "@/components/Footer";
+// import { FlowAuthProvider } from "@onflow/fcl-react";
 //import space mono from next font
 import { Bebas_Neue } from "@next/font/google";
 

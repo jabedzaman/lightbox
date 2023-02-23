@@ -154,6 +154,11 @@
     "@babel/runtime" "^7.18.6"
     "@onflow/util-actor" "^1.1.2"
 
+"@onflow/fcl-react@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@onflow/fcl-react/-/fcl-react-0.0.0.tgz#9584fc2a4c7d6ce461e19b67b535280cf3aca960"
+  integrity sha512-VgEfKDltG7+pUu/NRwW+vFwp4Q7N9V5a1NiL1tSJoeDgyXqpgItXYNEA1n+BGJ+mjGKQw0ip4X+815qXR4lryQ==
+
 "@onflow/fcl@^1.3.2":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@onflow/fcl/-/fcl-1.3.2.tgz#8ba7a91b9d80e1179832d2eac702e1b885a098f8"
