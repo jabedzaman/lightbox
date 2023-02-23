@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import "@/styles/globals.css";
 import Footer from "@/components/Footer";
+// import { FlowAuthProvider } from "@onflow/fcl-react";
 //import space mono from next font
 import { Bebas_Neue } from "@next/font/google";
 
@@ -12,10 +13,12 @@ const BebasNeue = Bebas_Neue({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${BebasNeue.className} bg-black min-h-screen`}>
-      <Header/>
-      <Component {...pageProps} />
-      <Footer/>
-    </main>
+    // <FlowAuthProvider>
+      <main className={`${BebasNeue.className} bg-black min-h-screen`}>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </main>
+    // </FlowAuthProvider>
   );
 }
