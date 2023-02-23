@@ -53,7 +53,7 @@ export default function Home() {
         <meta name="description" content="My first web3 app on Flow!" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <h1 className='font-bold text-9xl'>Flow App</h1>
+      <h1 className=''>Flow App</h1>
       {user.loggedIn
         ? <AuthedState />
         : <UnauthenticatedState />
